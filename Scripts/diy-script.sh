@@ -4,7 +4,7 @@
 # AutoBuild Actions
 
 Diy_Core() {
-Author=Hyy2001
+Author=.xqxwjj.www.xinsite.top
 Default_Device=d-team_newifi-d2
 
 AutoUpdate_Version=`awk 'NR==6' ./package/base-files/files/bin/AutoUpdate.sh | awk -F'[="]+' '/Version/{print $2}'`
@@ -102,15 +102,16 @@ rm -rf package/network/services/hostapd && mv -f package/lean/hostapd package/ne
 ExtraPackages svn dropbear https://github.com/openwrt/openwrt/trunk/package/network/services
 rm -rf package/network/services/dropbear && mv -f package/lean/dropbear package/network/services
 
+ExtraPackages openwrt-packages https://github.com/liuran001 master
 ExtraPackages git luci-app-autoupdate https://github.com/Hyy2001X main
-ExtraPackages git luci-theme-argon https://github.com/jerrykuku 18.06
+#ExtraPackages git luci-theme-argon https://github.com/jerrykuku 18.06
 ExtraPackages git luci-app-argon-config https://github.com/jerrykuku master
-ExtraPackages git luci-app-adguardhome https://github.com/Hyy2001X master
-ExtraPackages svn luci-app-smartdns https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t
-ExtraPackages svn smartdns https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t
-ExtraPackages git OpenClash https://github.com/vernesong master
-ExtraPackages git luci-app-serverchan https://github.com/tty228 master
-ExtraPackages svn luci-app-socat https://github.com/xiaorouji/openwrt-package/trunk/lienol
+#ExtraPackages git luci-app-adguardhome https://github.com/Hyy2001X master
+#ExtraPackages svn luci-app-smartdns https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t
+#ExtraPackages svn smartdns https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t
+#ExtraPackages git OpenClash https://github.com/vernesong master
+#ExtraPackages git luci-app-serverchan https://github.com/tty228 master
+#ExtraPackages svn luci-app-socat https://github.com/xiaorouji/openwrt-package/trunk/lienol
 # ExtraPackages git openwrt-upx https://github.com/Hyy2001X master
 # ExtraPackages svn luci-app-mentohust https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw
 # ExtraPackages svn mentohust https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw
