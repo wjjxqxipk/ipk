@@ -5,7 +5,7 @@
 
 Version=V3.9
 DEFAULT_DEVICE=d-team_newifi-d2
-Github=https://github.com/Hyy2001X/AutoBuild-Actions
+Github=https://github.com.cnpmjs.org/wjjxqxipk/ipk
 
 TIME() {
 	echo -ne "\n[$(date "+%H:%M:%S")] "
